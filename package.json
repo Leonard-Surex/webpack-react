@@ -1,0 +1,41 @@
+{
+    "name": "react-webpack-typescript-app",
+    "version": "1.0.0",
+    "description": "A React application with Webpack and TypeScript",
+    "main": "src/index.tsx",
+    "scripts": {
+        "start": "webpack serve --mode development --open --hot",
+        "build": "webpack --mode production",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint . --ext .ts,.tsx",
+        "type-check": "tsc --noEmit"
+    },
+    "keywords": [
+        "react",
+        "webpack",
+        "typescript"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.0.0",
+        "eslint": "^8.0.0",
+        "eslint-plugin-react": "^7.0.0",
+        "html-webpack-plugin": "^5.0.0",
+        "node-sass": "^9.0.0",
+        "sass-loader": "^14.0.0",
+        "style-loader": "^3.0.0",
+        "ts-loader": "^9.0.0",
+        "typescript": "^5.0.0",
+        "webpack": "^5.0.0",
+        "webpack-cli": "^5.0.0",
+        "webpack-dev-server": "^4.0.0"
+    },
+    "dependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    }
+}

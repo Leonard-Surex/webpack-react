@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  react-app:
+    container_name: react-webpack-typescript-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/usr/src/app # Maps the current directory to the app directory in the container
+      - /usr/src/app/node_modules # Anonymous volume for node_modules
+      - ./dist:/usr/src/app/dist # Maps the dist directory from the container to the host
+    command: npm start
